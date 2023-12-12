@@ -12,9 +12,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
     padding: 20px 60px;
-  
+
 }
 #navarLogo>h1{
    font-size: 33px;
@@ -23,7 +22,10 @@ body{
     
 #navarMenuDiv{
     display: flex;
+     align-items: center;
     gap: 50px;
+
+   
 }
 #navarMenuDiv>button{
 display: flex;
@@ -36,6 +38,7 @@ border: none;
 border-radius: 5px;
 padding: 10px 15px;
 gap: 10px;
+
 }
     
 #navarMenuDiv>ul{
@@ -43,6 +46,7 @@ gap: 10px;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
+    
     
 }
 
@@ -67,7 +71,7 @@ li{
     color: #fff;
     border-radius: 10px;
 
-  
+
 }
 #bannarImgDiv{
     margin: auto;
@@ -78,7 +82,9 @@ li{
    
 
 }
-
+#bannarTextDiv{
+    padding-top: 45px;
+}
 #bannarTextDiv>h1{
     font-weight: 700;
     font-size: 70px;
@@ -102,11 +108,7 @@ color: white;
 border: none;
 border-radius: 5px;
 padding: 10px 15px;
-
-
 }
-
-
 /* bannar end */
 
  /* football Channel start */
@@ -115,11 +117,8 @@ padding: 10px 15px;
     grid-template-columns: 20% 80%;
     justify-content: space-between;
     align-items: start;
-    padding: 20px 50px;
-    grid-gap: 30px;
-   
-   
-   
+    padding: 15px 30px;
+    grid-gap: 20px;
 }
 #ChannelMenu{
     display: grid;
@@ -127,16 +126,14 @@ padding: 10px 15px;
     gap: 20px;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
-    background-color: #161616;
+    padding: 5px 0;
+    background-color:#fff;
      border-radius: 10px;
-    
-    
 }
 #ChannelMenu>button{
     text-align: center;
     border-radius: 10px;
-    padding: 20px 50px;
+    padding: 15px 30px;
 }
 #But{
  border: none;
@@ -150,8 +147,6 @@ color: white;
     grid-gap:20px;
     justify-content: space-between;
     align-items: center;
-   
-   
 }
 .cardDiv{
     width: 300px;
@@ -166,9 +161,6 @@ color: white;
     display: flex;
     align-items: center;
     gap: 10px;
-
-   
-    
 }
 .cardDesDiv{
     padding: 10px 20px;
@@ -187,6 +179,35 @@ color: white;
 
     /* football Channel end */
 
+
+
+
+
+
+    .UpcomingMatch{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        background-color: darkgray;
+       display: none;
+    }
+    
+    .Match{
+       display: grid;
+       grid-template-columns:2,1fr;
+       justify-content: space-between;
+       align-items: center;
+       display: none;
+    }
+    .frist{
+        border: 2px solid gray;
+    }
+    
+    
+    
+
     /* footer start */
 #ContactDiv{
     text-align: center;
@@ -195,7 +216,7 @@ color: white;
     padding: 30px 50px;
     line-height: 40px;
    
-   
+  
    
 }
     
@@ -204,7 +225,7 @@ color: white;
     grid-template-columns: repeat(6,1fr);
     font-size: 16px;
     font-weight: 400;
-   
+  
 }
 
     /* footer end */
@@ -217,6 +238,9 @@ color: white;
 
 
 
+/* mobile responsive */
+
+
      @media screen and (max-width:576px){
 
         /* navar start */
@@ -226,64 +250,60 @@ color: white;
     justify-content: center;
     align-items: center;
   
-    padding: 10px 30px;
+    padding: 10px 5px;
 }
 
-
-
-    
 #navarMenuDiv{
    
-    flex-direction: column;
-    gap: 0;
+    flex-direction: column; 
+    align-items: center;
+    gap: 5px;
 }
 #navarMenuDiv>button{
 
-padding: 10px 10px; 
+padding: 10px 5px; 
 
 
 }
     
 #navarMenuDiv>ul{
    
-    gap: 30px;
+    gap: 15px;
     
 }
 
-
-
-
 /* navar end */
+
+
 /* bannar start */
 #bannarSection{
-    display: grid; 
- 
-    padding: 20px 50px;
-   
- }
- #bannarMainDiv{
+    margin: 20px 50px;
+    padding: 30px 30px 5px 30px;
      display: grid;
      grid-template-columns: repeat(1,1fr);
      justify-content: space-between;
      align-items: center;
-     
-     padding: 50px 50px 0 50px;
-     background-color: #161616;
-     color: #fff;
-     border-radius: 10px;
- 
-   
+     grid-gap: 45px;
+ }
+ #bannarImgDiv{
+     margin: auto;
+ }
+ #bannarImgDiv>img{
+    height: 300px;
+ }
+ #bannarTextDiv{
+     padding-top: 45px;
  }
  #bannarTextDiv>h1{
      font-weight: 700;
-     font-size: 70px;
-     line-height: 80px;
+     font-size: 50px;
+     line-height: 70px;
     
  }
  #bannarTextDiv>p{
      font-weight: 400;
      font-size: 16px;
-     line-height: 26px;
+     line-height: 25px;
     
  }
  
@@ -291,15 +311,109 @@ padding: 10px 10px;
  display: flex;
  justify-content: space-around;
  align-items: center;
- font-size:20px ;
- background-color: #D00;
- color: white;
- border: none;
+
  border-radius: 5px;
- padding: 10px 15px;
+ padding: 5px 10px;
  
  
  }
+ /* bannar end */
+
+
+ /* football Channel start */
+#ChannelDiv{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: space-between;
+    align-items: start;
+    padding: 12px 30px;
+    grid-gap: 20px;
+   
+   
+   
+}
+#ChannelMenu{
+    display: grid;
+    grid-template-columns: 1,1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 0;
+    background-color: #fff;
+     border-radius: 10px;
+    
+    
+}
+#ChannelMenu>button{
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+#But{
+ border: none;
+background-color: #D00;
+color: white;
+
+}
+.ChannelCardDiv{
+  
+    grid-template-columns: repeat(1,1fr);
+    grid-gap:20px;
+ 
+    align-items: center;
+    width: 350px;
+  
+}
+.iconDiv{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.cardDesDiv{
+    padding: 10px 20px;
+}
+.cardImgDiv>img{
+    width: 300px;
+}
+.cardDesDiv>button{
+    padding: 5px 15px;
+    font-size: 18px;
+    
+    border-radius: 10px;
+}
+
+
+
+    /* football Channel end */
+
+
+    /* footer start */
+    #ContactDiv{
+        text-align: center;
+        background: #000;
+        color: #fff;
+        padding: 10px 15px;
+        line-height: 40px;
+       
+      
+    }
+      
+    #ContactDiv>ul{
+        display: grid;
+        text-align: center;
+        grid-template-columns: 100%;
+        font-size: 16px;
+        font-weight: 300;
+        grid-gap: 5px;
+      
+    }
+    
+        /* footer end */
+
+        
+
+
+
 
 
      }
